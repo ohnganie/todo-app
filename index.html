@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Ohnganies todo App</title>
+</head>
+<header>
+    <h1 class="header">Onganies Todo List</h1>
+</header>
+<body>
+    <div class="container">
+       
+
+            <div class="addTask">
+                <input type="text" class="input" placeholder="Enter your task:"><br>
+                <label  class ="label" for = "datestart">Start date:</label>
+                <input type="date" class="datestart"><br>
+                <label class="labels"for = "dateend">Due date:</label>
+                <input type= "date" class ="dateend"><br>
+                <button class="addbtn">+ Add task</button>
+                
+            </div>
+        
+
+            
+        <div class="todoDiv">
+            <div class="tasks" draggable= "true">
+                <ol class="notCompleted" >
+                    <!-- <li class="task fill" draggable="true">
+                            <div class="task-content">Create repository template with HTML & CSS</div>
+                            <div class="trash">X</div>
+                        </li> -->
+                    
+                    <h3 class="heading">Tasks to do:</h3>
+                </ol>
+            </div>
+            <div class="tasks" draggable="true">
+                <ol class="inProgress">
+                    <h3 class="heading">In progress:</h3>
+                </ol>
+    
+            </div>
+    
+            <div class="tasks" draggable="true">
+                <ol class="Completed">
+                    <h3 class="heading">Completed:</h3> 
+                    
+                </ol>
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="main.js" defer></script>  
+</body>
+</html>

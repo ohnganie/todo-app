@@ -1,0 +1,181 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgb(0,0,0,0.8)),url("it.jpg");
+}
+.header{
+    text-align: center;
+    font-family: 'Festive', cursive;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 470%;
+    color: white;
+    word-spacing: 10px;
+}
+.container{
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.addTask{
+    width:100%;
+    padding:10px 0;
+    text-align: center;
+    line-height: 50px;
+    
+}
+.input{
+    width:90%;
+    color:white;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    padding:10px;
+    font-size: 22px;
+    outline:none;
+}
+.label, .labels{
+    font-size: 22px;
+}
+.addbtn{
+    margin:0 10px;
+    background:#222;
+    color:white;
+    font-size:18px;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:200px;
+    
+}
+.notCompleted, .Completed, .inProgress{
+    margin:5px 0;
+    padding:20px;    
+}
+h3{
+    font-size:28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    
+}
+ol{
+    list-style: none;
+    font-size: 22px; 
+}
+ol li{
+    width: 100%;
+    padding: 18px;
+    margin:3px 0;
+    font-size:14px; 
+    background-color: white;
+    
+    
+}
+
+ol li::before{
+    
+    width:1rem;
+    height:1rem;
+    border-radius: 50%;
+    display:inline-block;
+    line-height:2rem;
+    text-align:center;
+    color:white;
+    margin-right:0.5rem;
+
+}
+li button{
+    float:right;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.todo-Dates{
+    counter-reset:none ;
+    text-align: left;
+}
+.label, .labels{
+    color:white
+}
+button:hover{
+    background:orangered ;
+    color:white;
+}
+
+.label{
+    text-align: right;
+}
+
+ol{
+    display: flexbox;
+    line-height: 2rem;
+   
+    
+}
+
+.todoDiv{
+	width: auto;
+	height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+	justify-content: center;
+	flex-basis: center;
+	flex-direction: row; 
+}
+.heading{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(12, 11, 12, 0.5);
+    display: flex;
+	justify-content: left;
+    background:#222;
+    color:white;
+    font-size: 25px;
+	font-weight: 600;
+}
+
+.tasks{
+    flex: 0 0 auto;
+    width: 350px;
+    height: 1500px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 1px;
+    margin-left: 40px;
+    box-sizing: unset;    
+}
+.task {
+    list-style-type: none;
+    margin: 16px 0px 0px 24px;
+    padding: 10px 8px 10px 10px;
+    position: relative;
+    background-color: white;
+    border: 3px solid grey;
+    box-sizing: border-box;
+    border-radius: 2px;
+    min-height: 80px;
+    width: 288px;
+    
+  }
+  
+  
+  .task:hover {
+    background: #FFFFFF;
+    border: 1px solid #4786FF;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px #4786FF;
+    border-radius: 2px;
+  }
