@@ -107,8 +107,6 @@ const dragOver = (event:any) => {
 const dragLeave = (event:any) => {
     // console.log("LEAVE");
     event.preventDefault();
-
-
 }
 
 const dragDrop = (event:any) => {
